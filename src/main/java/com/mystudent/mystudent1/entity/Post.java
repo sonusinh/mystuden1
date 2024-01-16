@@ -22,4 +22,31 @@ public class Post {
     private  String  description;
     private  String content;
 
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getTitle() {
+
+        return null;
+    }
+
+    public String getDescription() {
+        return null;
+    }
+
+    public Object getContent() {
+        return  null;
+    }
 }
+
+
