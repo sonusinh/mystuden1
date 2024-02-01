@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PostServiceImpl implements PostService {
+
     private PostRepository postRepository;
 
     public PostServiceImpl(PostRepository postRepository) {
@@ -20,9 +21,8 @@ public class PostServiceImpl implements PostService {
         post.setTitle(postDto.getTitle());
         post.setDescription(postDto.getDescription());
         post.setContent(postDto.getContent());
-
         Post savedPost = postRepository.save(post);
-        PostDto dto=new PostDto();
+        PostDto dto = new PostDto();
         dto.setTitle(savedPost.getTitle());
         dto.setDescription(savedPost.getDescription());
         dto.setContent(savedPost.getContent());
